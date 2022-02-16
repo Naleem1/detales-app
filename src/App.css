@@ -3,7 +3,10 @@
   background-color: rgb(255, 51, 0);
   width: 100vw;
   height: 100vh;
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
 }
 .p{
   font-size: 80px
@@ -34,9 +37,16 @@
   padding: 25px;
 }
 
-.ul{
+ul{
   background: linear-gradient(gray);
   height: 80px;
+  display: flex;
+  justify-content: space-around;
   flex-direction: row;
   text-emphasis-position:right;
+}
+
+.navBarItems li {
+list-style: none;
+margin: 0 20px;
 }

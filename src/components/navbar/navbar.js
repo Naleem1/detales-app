@@ -10,12 +10,12 @@ class Navbar extends Component {
     }
     render() {
         return(
-            <nav className='navBarItems'>
+            <nav>
                 
                 <div className='menu-icon'>
 
                 </div>
-                <ul>
+                <ul className='navBarItems'>
                     {menuItems.map((item,index) => {
                         return (
                         <li key ={index}><a href={this.handleClick} className={item.cName}>{item.title}</a></li>
