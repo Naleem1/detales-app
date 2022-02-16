@@ -49,7 +49,7 @@ function App() {
       <h1>DeTales</h1>
       <p>Is your perspective a positive contriubtiton to your life?</p>
 
-    <Navbar />
+    {/* <Navbar /> */}
 
     {<Card 
     header='Mental Health Facts'
@@ -59,6 +59,12 @@ function App() {
     getQuote={getNewQuote}
     />}
     
+  <section>
+    <h1>Resources</h1>
+    <li>https://www.imalive.org/</li>
+    
+    
+  </section>
     </div>
   );
   
