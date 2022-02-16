@@ -18,7 +18,7 @@ class Navbar extends Component {
                 <ul>
                     {menuItems.map((item,index) => {
                         return (
-                        <li key ={index}><a className={item.cName}>{item.title}</a></li>
+                        <li key ={index}><a href={this.handleClick} className={item.cName}>{item.title}</a></li>
 
                         )
                     })}
