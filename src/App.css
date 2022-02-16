@@ -1,25 +1,42 @@
 .App {
   text-align: center;
+  background-color: rgb(255, 51, 0);
+  width: 100vw;
+  height: 100vh;
+  
 }
+.p{
+  font-size: 80px
+}
+
 
 .card {
   display: flex;
   flex-direction: column;
   border: 1px solid rgb(169,169,169) ;
-  max-width: 350px;
-  border-radius: 8px
+  max-width: 650px;
+  max-height: fit-content;
+  border-radius: 8px;
+  width: auto;
+  
 }
 
 .card_title {
-  height: 150px;
+  height: 70px;
   width: 100%;
-  background-color: rgb(146, 27, 27);
+  background-color: rgb(139, 128, 128);
 }
 
 .card_content {
   flex: 1;
-  background-color: rgb(105, 98, 98);
+  background-color: rgb(221, 96, 96);
   text-emphasis-color: white;
   padding: 25px;
 }
 
+.ul{
+  background: linear-gradient(gray);
+  height: 80px;
+  flex-direction: row;
+  text-emphasis-position:right;
+}

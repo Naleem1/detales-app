@@ -1,20 +1,25 @@
 
-function Card(prop) {
+function Card(props) {
+
+    console.log(props)
+    
     return(
             <div className='card'>
                 <div className='card_title'>
-                <header>Testimony</header>
+                <header>Mental Health Facts</header>
 
-                <p>heleoejkejgakjdkajdklcjladkjf</p>
+                <p>{props.title}</p>
                 
                 </div>
 
                  <div className='card_content'>
-                <p>This is all the shit that pushed me to Therapy!</p>
+                <p>{props.content}</p>
 
-                <button>Dive Deeper</button>
+                <button onClick={props.getQuote}>Learn More</button>
                 
                 </div>
+
+                
 
             </div>
         )

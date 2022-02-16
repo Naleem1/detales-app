@@ -14,7 +14,7 @@ MVP User Stories-
     -Quotes box within card
 
 API- 
-    https://lucifer-quotes.vercel.app/
+    https://lucifer-quotes.vercel.app/api/quotes
 
 Component Hierarchy
 
