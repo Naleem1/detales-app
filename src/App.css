@@ -8,10 +8,14 @@
   align-items: center;
 
 }
-.p{
-  font-size: 80px
+
+.quote_text {
+color: rgb(214, 55, 55);
 }
 
+.p{
+  font-size: 80px;
+}
 
 .card {
   display: flex;
@@ -32,9 +36,16 @@
 
 .card_content {
   flex: 1;
-  background-color: rgb(221, 96, 96);
+  background-color: rgb(51, 38, 38);
   text-emphasis-color: white;
   padding: 25px;
+}
+
+.quote_container {
+  height: fit-content;
+  width: fit-content;
+  border-style: solid;
+  padding: 0%;
 }
 
 ul{

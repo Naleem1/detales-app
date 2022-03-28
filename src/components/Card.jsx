@@ -12,12 +12,16 @@ function Card(props) {
                 
                 </div>
 
-                 <div className='card_content'>
-                <p>{props.content}</p>
+                 <div className = 'card_content'>
+
+                    <div className = 'quote_container'>
+                    <p className = 'quote_text'>{props.content}</p>
+                    </div>
 
                 <button onClick={props.getQuote}>Learn More</button>
-                
+
                 </div>
+                
 
                 
 

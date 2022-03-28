@@ -2,6 +2,7 @@ import './App.css'
 import React, {useEffect, useState} from 'react';
 import Card from './components/Card' 
 
+
 const mhFacts = [
   
   'Mental Health issues can affect anyone, regardless of age, race and economic or social class and, due to demographic and lifestyle factors, these are expected to rise.',
@@ -10,6 +11,20 @@ const mhFacts = [
   
   'STIGMA SURROUNDING MENTAL HEALTH REMAINS ONE OF ITS BIGGEST BARRIERS'
 ]
+
+const initialState = {count: 0}
+
+function counter(state, action) {
+  switch (action.count) {
+    case 'increment':
+      return {count: state.count + 1};
+    case 'decrement':
+      return {count: state.count - 1};
+    default:
+      throw new Error()
+  }
+}
+
 
 function App() {
 
@@ -25,6 +40,7 @@ function App() {
       function getNewQuote(){
          fetch(URL).then((res) => res.json()).then((res) => {
       setQuote(res[0].quote)
+      counter()
 
     })
     .catch((err) => {
@@ -69,7 +85,7 @@ function App() {
   
   }
   
-  export default App;  
+  export default App
         
 
 
