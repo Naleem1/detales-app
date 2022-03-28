@@ -1,7 +1,6 @@
 import './App.css'
 import React, {useEffect, useState} from 'react';
 import Card from './components/Card' 
-import Navbar from './components/navbar/navbar';
 
 const mhFacts = [
   
@@ -25,7 +24,6 @@ function App() {
 
       function getNewQuote(){
          fetch(URL).then((res) => res.json()).then((res) => {
-      // console.log(res)
       setQuote(res[0].quote)
 
     })
@@ -37,7 +35,8 @@ function App() {
 
       function getNewFact(){
         fetch(mhFacts).then(() =>{
-          console.log(mhFacts[0])
+          const randFact = Math.random()
+          console.log(mhFacts[randFact])
           setFact(mhFacts[0])
         })
       }
@@ -61,7 +60,7 @@ function App() {
     
   <section>
     <h1>Resources</h1>
-    <li>https://www.imalive.org/</li>
+    <li>< a href = 'https://www.imalive.org/'>Online Crisis Chat</a></li>
     
     
   </section>
